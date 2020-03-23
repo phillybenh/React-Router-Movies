@@ -19,12 +19,12 @@ const MovieList = props => {
     getMovies();
   }, []);
 
-console.log("props",props);
+  // console.log("props", props);
 
   return (
     <div className="movie-list">
       {movies.map(movie => (
-            <MovieDetails key={movie.id} movie={movie} />
+        <MovieDetails key={movie.id} movie={movie} />
       ))}
     </div>
   );
